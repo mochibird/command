@@ -22,7 +22,7 @@ mkdir ファイル名でディレクトリを作成
 
 touch test.php test.phpというファイルを作成.  docker/test.phpでディレクトリに直接も可
 
-mv test.rb docker/　dockerのディレクトリの中にtest.rbファイルを移動
+mv test.rb 
 
 rm test.php  test.php ファイルを削除
 
