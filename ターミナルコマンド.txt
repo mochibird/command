@@ -2,6 +2,14 @@ cd Desktop/でデスクトップにディレクトリを作れるようにでき
 
 mkdir ファイル名でディレクトリを作成
 
+command + t タブを増やす
+
+command + w　タブを閉じる
+
+command + 矢印　タブの移動
+
+command + d タブの左右の分割
+
 touch test.php test.phpというファイルを作成.  docker/test.phpでディレクトリに直接も可
 
 mv test.rb docker/　dockerのディレクトリの中にtest.rbファイルを移動
