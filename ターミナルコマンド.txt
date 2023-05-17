@@ -39,6 +39,24 @@ cat ファイル名　ファイルの中身を確認
 git --version gitがインストールされているか確認
 
 
+# ユーザー名を設定
+$ git config --global user.name "github user name"
+
+# メールアドレスを設定
+$ git config --global user.email github@example.com
+
+# Git で使用するエディタに Visual Studio Code を指定
+$ git config --global core.editor 'code --wait'
+
+# マージする時にファストフォワードされないようにする
+$ git config --global merge.ff false
+
+# プルの挙動をリベース型にする
+$ git config --global pull.rebase merges
+
+# 設定を確認する
+$ git config --list
+
 
 
 
