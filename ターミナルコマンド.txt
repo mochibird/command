@@ -138,3 +138,27 @@ docker container rm <コンテナID>
 docker image rm hello-world
 
 
+
+
+(Docker + Laravel)
+laravel
+curl -s "https://laravel.build/MyBBS" | bash 
+でlaravelをインストール？ファイル作成
+拡張
+EditorConfig for VS Code
+
+Laravel Blade Snippets
+.env
+APP_PORT=8573
+app.php
+'timezone' => 'Asia/Tokyo',にする
+app/Models/User.phpファイルを削除する
+database/migrations/ファイルをすべて削除
+vscode上のターミナルで./vendor/bin/sail up -d
+dockerを停止したい場合./vendor/bin/sail down
+
+routes/web.phpの中のreturn view(‘任意’); 任意のところを変える
+resourcesの中のviews/welcome.blade.phpを任意.blade.phpに変える
+publicでcssファイルやjavascriptファイルは生成して使っていく
+<link rel="stylesheet" type="text/css" href="css/style.css">のようにそのままのディレクトリとファイル構成の記載でよい
+
