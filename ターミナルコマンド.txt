@@ -142,6 +142,19 @@ docker image rm hello-world
 docker-compose up -d 開発環境を起動
 ↑dockerfileやdocker-compose.ymlなどが揃っている状態なら環境構築や起動して続きをやれる
 
+起動しているコンテナの名前の確認
+docker-compose ps --service
+
+PHPコンテナにログイン
+docker-compose exec php ash
+
+db コンテナにログイン
+①docker-compose exec db　bash
+
+MySQL にログイン
+②mysql -u (docker-compose.ymlのMYSQL_USER:????の????の値)　-p (docker-compose.ymlのMYSQL_DATABASE::????の????の値)
+③MYSQL_PASSWORD:????の????の値を見えないけどターミナルで入力してENTER
+
 
 (Docker + Laravel)
 laravel
