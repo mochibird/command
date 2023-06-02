@@ -139,8 +139,11 @@ docker container rm <コンテナID>
 docker image rm hello-world
 
 
-docker-compose up -d 開発環境を起動
+①docker-compose up -d 開発環境を起動
 ↑dockerfileやdocker-compose.ymlなどが揃っている状態なら環境構築や起動して続きをやれる
+
+②docker-compose exec db bash
+↑db コンテナにログイン
 
 起動しているコンテナの名前の確認
 docker-compose ps --service
