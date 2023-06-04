@@ -61,13 +61,13 @@ $ git config --list
 
 
 -----dart sassコマンド(Node.jsインストール後)
-npm init -y    ⬅️package.json生成
-npm install sass　⬅️dart sass生成
-package.json内
+①npm init -y    ⬅️package.json生成
+②npm install sass　⬅️dart sass生成
+③package.json内
   "test": "echo \"Error: no test specified\" && exit 1", ←カンマで区切るのを忘れるな
    "sass": "sass --watch sass:css"
-途中をこうする
-npm run sass⬅️cssファイル生成　sass開始
+④同じ階層にsass/style.scssを作成
+⑤npm run sass⬅️cssファイル生成　sass開始
 
 
 -----dockerの基本コマンド
