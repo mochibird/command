@@ -60,6 +60,14 @@ $ git config --global pull.rebase merges
 $ git config --list
 
 
+-----dart sassコマンド(Node.jsインストール後)
+npm init -y    ⬅️package.json生成
+npm install sass　⬅️dart sass生成
+package.json内
+  "test": "echo \"Error: no test specified\" && exit 1", ←カンマで区切るのを忘れるな
+   "sass": "sass --watch sass:css"
+途中をこうする
+npm run sass⬅️cssファイル生成　sass開始
 
 
 -----dockerの基本コマンド
