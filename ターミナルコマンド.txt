@@ -179,7 +179,7 @@ app.php
 'timezone' => 'Asia/Tokyo',にする
 app/Models/User.phpファイルを削除する
 database/migrations/ファイルをすべて削除
-vscode上のターミナルで./vendor/bin/sail up -d
+vscode上のターミナルで./vendor/bin/sail up -d   ←docker-compose up -dのLaravel版？
 dockerを停止したい場合./vendor/bin/sail down
 
 routes/web.phpの中のreturn view(‘任意’); 任意のところを変える
