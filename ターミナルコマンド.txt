@@ -163,7 +163,7 @@ db コンテナにログイン
 MySQL にログイン
 ②mysql -u (docker-compose.ymlのMYSQL_USER:????の????の値)　-p (docker-compose.ymlのMYSQL_DATABASE::????の????の値)
 ③MYSQL_PASSWORD:????の????の値を見えないけどターミナルで入力してENTER
-
+④ターミナルにSQLで書いた内容を流す
 
 (Docker + Laravel)
 laravel
