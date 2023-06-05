@@ -188,5 +188,5 @@ publicでcssファイルやjavascriptファイルは生成して使っていく
 <link rel="stylesheet" type="text/css" href="css/style.css">のようにそのままのディレクトリとファイル構成の記載でよい
 
 ルーティングごとの処理を置くコントローラーと呼ばれるファイルを作成するコマンド⇩
-vendor/bin/sail artisan make:controller 
+vendor/bin/sail artisan make:controller ????(コントローラーの名前)
 
