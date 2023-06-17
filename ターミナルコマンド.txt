@@ -192,4 +192,4 @@ vendor/bin/sail artisan make:controller ????(コントローラーの名前)
 
 ./vendor/bin/sail mysql mybbs で作成してあるmybbsのデータベースに接続
 
-./vendor/bin/sail artisan make:migration create_posts_table 　テーブルを管理するためのMigrationファイルを作成
+./vendor/bin/sail artisan make:migration  create_posts_table 　テーブルを管理するためのポストをいうMigrationファイルを作成
