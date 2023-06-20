@@ -229,3 +229,5 @@ exit; でデータベースの接続終了
 
 特定の id のレコードだけを抽出
 App\Models\Post::find(3) (例)
+
+App\Models\Post::orderBy('created_at', 'desc')->limit(3)->get(); 条件を絞った例
