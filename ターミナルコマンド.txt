@@ -222,3 +222,10 @@ exit; でデータベースの接続終了
 ②./vendor/bin/sail tinker
 
 ③App\Models\Post::create(['title'=>'Title 2', 'body' => 'Body 2']); 値を挿入する例
+
+
+すべて抽出コマンド
+ App\Models\Post::all();
+
+特定の id のレコードだけを抽出
+App\Models\Post::find(3) (例)
