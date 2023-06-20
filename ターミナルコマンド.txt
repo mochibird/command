@@ -165,6 +165,11 @@ MySQL にログイン
 ③MYSQL_PASSWORD:????の????の値を見えないけどターミナルで入力してENTER
 ④ターミナルにSQLで書いた内容を流す
 
+
+
+
+
+
 (Docker + Laravel)
 laravel
 curl -s "https://laravel.build/MyBBS" | bash 
@@ -231,3 +236,15 @@ exit; でデータベースの接続終了
 App\Models\Post::find(3) (例)
 
 App\Models\Post::orderBy('created_at', 'desc')->limit(3)->get(); 条件を絞った例
+
+4番目のデータを更新する
+①$post4 = App\Models\Post::find(4); 
+
+②$post4->title = 'Title updated';
+
+③$post4->save();
+
+5番目のデータを削除する
+①$post5 = App\Models\Post::find(5);
+
+②$post5->delete();
