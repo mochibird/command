@@ -192,10 +192,17 @@ vendor/bin/sail artisan make:controller ????(コントローラーの名前)
 
 ./vendor/bin/sail mysql mybbs で作成してあるmybbsのデータベースに接続
 
-exit; でデータベースの接続終了？
+exit; でデータベースの接続終了
 
 ./vendor/bin/sail artisan make:migration  create_posts_table 　テーブルを管理するためのポストをいうMigrationファイルを作成
 
  ./vendor/bin/sail artisan make:model 　　　Post Modelを作成し、テーブルをPHPのオブジェクトとして扱えるようにする
 
-./vendor/bin/sail tinkerインタラクティブにデータを操作する
+ーーーテーブルのカラムに値を設定する
+①./vendor/bin/sail tinkerインタラクティブにデータを操作する
+
+②$post = new App\Models\Post(); インスタンス生成の例
+
+③$post->title = 'Title1'; テーブルのカラムに値を設定する例
+　　　$post->body = 'Body 1';
+　　　$post->save();
