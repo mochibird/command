@@ -221,4 +221,4 @@ exit; でデータベースの接続終了
 }　　　　　　　　　　　　　　　　　　モデルファイルのクラス内に　protected　の記述をしておく
 ②./vendor/bin/sail tinker
 
-③App\Models\Post::create(['title'=>'Title 2', 'body' => 'Body 2']);
+③App\Models\Post::create(['title'=>'Title 2', 'body' => 'Body 2']); 値を挿入する例
