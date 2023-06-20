@@ -194,11 +194,13 @@ vendor/bin/sail artisan make:controller ????(コントローラーの名前)
 
 exit; でデータベースの接続終了
 
+
+
 ./vendor/bin/sail artisan make:migration  create_posts_table 　テーブルを管理するためのポストをいうMigrationファイルを作成
 
  ./vendor/bin/sail artisan make:model 　　　Post Modelを作成し、テーブルをPHPのオブジェクトとして扱えるようにする
 
-ーーーテーブルのカラムに値を設定する
+ーーーテーブルのカラムに値を設定する(1つ目のやり方)
 ①./vendor/bin/sail tinkerインタラクティブにデータを操作する
 
 ②$post = new App\Models\Post(); インスタンス生成の例
@@ -206,3 +208,17 @@ exit; でデータベースの接続終了
 ③$post->title = 'Title1'; テーブルのカラムに値を設定する例
 　　　$post->body = 'Body 1';
 　　　$post->save();
+
+ーーーテーブルのカラムに値を設定する(2つ目のやり方)
+①class Post extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'title',
+        'body',
+    ];
+}　　　　　　　　　　　　　　　　　　モデルファイルのクラス内に　protected　の記述をしておく
+②./vendor/bin/sail tinker
+
+③App\Models\Post::create(['title'=>'Title 2', 'body' => 'Body 2']);
