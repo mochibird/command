@@ -197,3 +197,5 @@ exit; でデータベースの接続終了？
 ./vendor/bin/sail artisan make:migration  create_posts_table 　テーブルを管理するためのポストをいうMigrationファイルを作成
 
  ./vendor/bin/sail artisan make:model 　　　Post Modelを作成し、テーブルをPHPのオブジェクトとして扱えるようにする
+
+./vendor/bin/sail tinkerインタラクティブにデータを操作する
