@@ -248,3 +248,9 @@ App\Models\Post::orderBy('created_at', 'desc')->limit(3)->get(); 条件を絞っ
 ①$post5 = App\Models\Post::find(5);
 
 ②$post5->delete();
+
+独自のRequestクラスを作成し、バリデーション処理
+./vendor/bin/sail artisan meke:request PostRequest
+
+オプションを指定してモデルを一気に作る(マイグレーションとコントローラを一緒に作る)
+./vendor/bin/sail artisan make:model Comment -mc
