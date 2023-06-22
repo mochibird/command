@@ -187,6 +187,8 @@ database/migrations/ファイルをすべて削除
 vscode上のターミナルで./vendor/bin/sail up -d   ←docker-compose up -dのLaravel版？
 dockerを停止したい場合./vendor/bin/sail down
 
+./vendor/bin/sail build *万が一localhostが過去のキャッシュが使われてアクセスできない場合にこのコマンドを使う。その後./vendor/bin/sail up -d
+
 routes/web.phpの中のreturn view(‘任意’); 任意のところを変える
 resourcesの中のviews/welcome.blade.phpを任意.blade.phpに変える
 publicでcssファイルやjavascriptファイルは生成して使っていく
