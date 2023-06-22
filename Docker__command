@@ -1,1 +1,94 @@
+-----dockerの基本コマンド
+docker image 取得
+$docker image pull
 
+docker image ビルドの取得
+$docker image build
+
+$docker image rm リポジトリ名(イメージの名前)
+
+コンテナ生成
+$docker container create
+
+コンテナ起動
+$docker container start
+
+コンテナ停止
+$docker container stop
+
+コンテナ削除
+$docker container rm　 コンテナのID
+
+
+$docker container run
+
+コンテナ再起動
+$docker container restart
+
+
+-----docker-compose.yml(複数のコンテナを動かす)を使ったコマンド
+ビルド
+$docker-compose build
+
+生成・起動
+$docker-compose up
+
+停止
+$docker-compose stop
+
+削除
+$docker-compose rm
+
+再起動
+$docker-compose restart
+
+停止と削除
+$docker-compose down
+
+起動中のコンテナでコマンドを実行
+$ docker-compose exec
+
+コンテナの一覧を表示
+$docker-compose ps
+
+ログを表示
+$docker-compose logs
+
+使用していないコンテナ、イメージなどを削除
+$docker system prune
+
+
+
+# hello-world イメージからコンテナを生成・起動する(たぶん一番初めにdockerを使う際に行う処理)
+docker run hello-world
+
+# イメージの一覧を表示する
+docker image ls
+
+# コンテナ（プロセス）の一覧を表示する
+docker ps --all
+
+# コンテナを削除する
+docker container rm <コンテナID>
+
+# イメージを削除する
+docker image rm hello-world
+
+
+docker-compose up -d 開発環境を起動
+↑dockerfileやdocker-compose.ymlなどが揃っている状態なら環境構築や起動して続きをやれる
+
+起動しているコンテナの名前の確認
+docker-compose ps --service
+
+
+PHPコンテナにログイン
+docker-compose exec php ash
+<下記のログインを忘れないように!>
+db コンテナにログイン
+①docker-compose exec db　bash
+
+MySQL にログイン
+②mysql -u (docker-compose.ymlのMYSQL_USER:????の????の値)　-p (docker-compose.ymlのMYSQL_DATABASE::????の????の値)
+③MYSQL_PASSWORD:????の????の値を見えないけどターミナルで入力してENTER
+④ターミナルにSQLで書いた内容を流す
