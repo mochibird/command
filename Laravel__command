@@ -34,7 +34,7 @@ exit; でデータベースの接続終了
 
 ./vendor/bin/sail artisan migrate フォルダに配置されているファイルの up メソッドを実行してくれる
 
- ./vendor/bin/sail artisan make:model 　　　Post Modelを作成し、テーブルをPHPのオブジェクトとして扱えるようにする
+ ./vendor/bin/sail artisan make:model Post   Modelを作成し、テーブルをPHPのオブジェクトとして扱えるようにする
 
 ーーーテーブルのカラムに値を設定する(1つ目のやり方)
 ①./vendor/bin/sail tinkerインタラクティブにデータを操作する
