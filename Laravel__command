@@ -1,6 +1,6 @@
 laravel
 curl -s "https://laravel.build/MyBBS" | bash 
-でlaravelをインストール？ファイル作成
+でLaravelプロジェクトを作成
 拡張
 EditorConfig for VS Code
 
@@ -85,3 +85,4 @@ App\Models\Post::orderBy('created_at', 'desc')->limit(3)->get(); 条件を絞っ
 
 オプションを指定してモデルを一気に作る(マイグレーションとコントローラを一緒に作る)
 ./vendor/bin/sail artisan make:model Comment -mc
+
