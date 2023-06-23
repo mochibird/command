@@ -1,6 +1,12 @@
 laravel
 curl -s "https://laravel.build/MyBBS" | bash 
 でLaravelプロジェクトを作成
+
+No such file or directory と表示されたときの対処(OneDrive を使用している？)
+①mkdir laravel (ディレクトリを作成)
+②cd laravel
+③curl -s "https://laravel.build/MyBBS" | bash 
+
 拡張
 EditorConfig for VS Code
 
