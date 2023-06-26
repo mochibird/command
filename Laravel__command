@@ -93,6 +93,7 @@ App\Models\Post::orderBy('created_at', 'desc')->limit(3)->get(); 条件を絞っ
 ./vendor/bin/sail artisan make:model Comment -mc
 
 テーブルのリレーション
+--Migrations
         Schema::create('comments', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('post_id');
@@ -103,4 +104,12 @@ App\Models\Post::orderBy('created_at', 'desc')->limit(3)->get(); 条件を絞っ
             ->on('posts')
             ->onDelete('cascade');
         });
+--Models
+  ①  public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
 
+  ②  public function post(){
+        return $this->belongsTo(Post::class);
+    }
