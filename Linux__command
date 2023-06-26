@@ -58,3 +58,6 @@ $ git config --global pull.rebase merges
 
 # 設定を確認する
 $ git config --list
+
+# githubのリポジトリのクローンを持って来れる
+git clone https://github.com/dokugaku-engineer/server-side.git
