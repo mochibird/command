@@ -64,3 +64,6 @@ git clone https://github.com/dokugaku-engineer/server-side.git
 
 #今いるディレクトリのpart2をDesktopへコピーしてペースト
 cp -r part2  ~/Desktop
+
+#立ち上がっているPHPコンテナのバージョンを表示する
+docker-compose exec app php -v
