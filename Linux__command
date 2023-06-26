@@ -63,4 +63,4 @@ $ git config --list
 git clone https://github.com/dokugaku-engineer/server-side.git
 
 #今いるディレクトリのpart2をDesktopへコピーしてペースト
-cp -r part2 -t ~/Desktop
+cp -r part2  ~/Desktop
