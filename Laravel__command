@@ -92,3 +92,15 @@ App\Models\Post::orderBy('created_at', 'desc')->limit(3)->get(); 条件を絞っ
 オプションを指定してモデルを一気に作る(マイグレーションとコントローラを一緒に作る)
 ./vendor/bin/sail artisan make:model Comment -mc
 
+テーブルのリレーション
+        Schema::create('comments', function (Blueprint $table) {
+            $table->id();
+            $table->unsignedBigInteger('post_id');
+            $table->timestamps();
+            $table->string('body');
+            $table->foreign('post_id')
+            ->references('id')
+            ->on('posts')
+            ->onDelete('cascade');
+        });
+
