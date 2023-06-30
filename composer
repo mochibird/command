@@ -1,0 +1,11 @@
+#対話形式でcomposer.jsonを作成する
+composer init
+
+#新しいライブラリを追加する
+composer require <ライブラリ名>
+
+#composer.jsonもしくはcomposer.lockに従ってライブラリをインストールする - チーム開発時に使用。共通のバージョンのライブラリを使うことができる
+composer install
+
+#ライブラリを取り除く
+composer remove <ライブラリ名>
