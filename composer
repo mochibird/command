@@ -17,3 +17,5 @@ composer remove <ライブラリ名>
 2,phpdotenvをチェック
 
 3,docker-compose exec app composer init
+
+4,Enterを押していく。　Authorのところでnをおす Do you confirm generation [yes]?でyes
