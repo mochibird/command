@@ -45,4 +45,4 @@ $dotenv->load();
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-8,docker-compose exec app php ファイル名を実行
+9,docker-compose exec app php 環境変数を使いたいファイル名を実行
