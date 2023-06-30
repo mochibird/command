@@ -41,7 +41,7 @@ $dotenv->load();
 
 8,Composerの公式マニュアルにあるように require __DIR__ . '/vendor/autoload.php';を最初にロードしておかないといけないのでを環境変数を設定したいファイルの一番上にコピペして貼る
 ---例
- require __DIR__ . '/vendor/autoload.php';
+ require __DIR__ . '/vendor/autoload.php';　←読み込み先の指定に注意。指定しているファイルから見たvendor/autoload.phpの位置を指定　動画だと　　require __DIR__ . '/../vendor/autoload.php';としていた
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
