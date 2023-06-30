@@ -9,3 +9,7 @@ composer install
 
 #ライブラリを取り除く
 composer remove <ライブラリ名>
+
+
+###環境変数を管理しよう
+1,GithubでPHP envと検索する
