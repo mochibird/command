@@ -7,6 +7,8 @@ set character_set_client=utf8;
 set character_set_results=utf8;
 set character_set_connection=utf8;
 
+alter table （テーブル名） convert to character set utf8;
+
 cd Desktop/でデスクトップにディレクトリを作れるようにできる = ディレクトリの今いる位置を変えられる。移動できるということ。
 
 mkdir ファイル名でディレクトリを作成
