@@ -1,5 +1,8 @@
 #データベースの文字コードを確認する
 show variables like 'character%';
+#データベースの文字コードを日本語に変更
+set character_set_database=utf8;
+set character_set_server=utf8;
 cd Desktop/でデスクトップにディレクトリを作れるようにできる = ディレクトリの今いる位置を変えられる。移動できるということ。
 
 mkdir ファイル名でディレクトリを作成
