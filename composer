@@ -33,3 +33,8 @@ DB_DATABASE="book_log"
 
 S3_BUCKET="dotenv"
 SECRET_KEY="souper_seekret_key"
+
+7,phpdotenvをチェックし、
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+を環境変数を設定したいファイルにコピペしてロードする
