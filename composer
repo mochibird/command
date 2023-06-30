@@ -25,3 +25,11 @@ S3_BUCKET="dotenv"
 SECRET_KEY="souper_seekret_key"
 
 6, .envファイル内で環境変数を指定する
+例、
+DB_HOST="db"
+DB_USERNAME="book_log"
+DB_PASSWORD="pass"
+DB_DATABASE="book_log"
+
+S3_BUCKET="dotenv"
+SECRET_KEY="souper_seekret_key"
