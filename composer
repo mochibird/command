@@ -49,4 +49,4 @@ $dotenv->load();
 
 8,docker-compose exec app php (環境変数を使いたいファイルの指定)
 
-9, $???? = getenv(指定した環境変数); で使っていける
+9, (例)$dbHost = $_ENV['DB_HOST']; で使っていける
