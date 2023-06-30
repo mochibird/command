@@ -14,8 +14,8 @@ composer remove <ライブラリ名>
 ###composer.jsonをつくる
 1,GithubでPHP envと検索する
 
-2,phpdotenvをチェック
+2,docker-compose exec app composer init
 
-3,docker-compose exec app composer init
+3,Enterを押していく。　Authorのところでnをおす Do you confirm generation [yes]?でyes
 
-4,Enterを押していく。　Authorのところでnをおす Do you confirm generation [yes]?でyes
+4,phpdotenvをチェックし composer require vlucas/phpdotenvのコマンドを実行
