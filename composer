@@ -18,4 +18,4 @@ composer remove <ライブラリ名>
 
 3,Enterを押していく。　Authorのところでnをおす Do you confirm generation [yes]?でyes
 
-4,phpdotenvをチェックし composer require vlucas/phpdotenvのコマンドを実行
+4,phpdotenvをチェックし docker-compose exec app composer require vlucas/phpdotenv のコマンドを実行  ⬅️composer.jsonをアップデートし、ライブラリがインストールされる　PHP .envの中で使用するライブラリ
