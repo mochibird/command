@@ -39,4 +39,10 @@ $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 を環境変数を設定したいファイルにコピペして貼る
 
+8,Composerの公式マニュアルにあるように require __DIR__ . '/vendor/autoload.php';を最初にロードしておかないといけないのでを環境変数を設定したいファイルの一番上にコピペして貼る
+---例
+ require __DIR__ . '/vendor/autoload.php';
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
 8,docker-compose exec app php ファイル名を実行
