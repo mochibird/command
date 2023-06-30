@@ -11,7 +11,7 @@ composer install
 composer remove <ライブラリ名>
 
 
-###環境変数を管理しよう
+###composer.jsonをつくる
 1,GithubでPHP envと検索する
 
 2,phpdotenvをチェック
