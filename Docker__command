@@ -25,6 +25,17 @@ $docker container run
 コンテナ再起動
 $docker container restart
 
+#コンテナ名を確認
+docker ps
+
+#ログを確認したい時
+docker logs -f コンテナ名
+
+#アクセスログを確認したい時(エラーログを捨てる)
+docker logs コンテナ名 -f 2>/dev/null
+
+#エラーログを確認したい時
+docker logs コンテナ名 -f 1>/dev/null
 
 -----docker-compose.yml(複数のコンテナを動かす)を使ったコマンド
 ビルド
