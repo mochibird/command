@@ -198,5 +198,5 @@ ERROR [internal] load metadata for docker.io/library load metadata for docker.io
 https://zenn.dev/hiszuk/articles/cb30071df19a1b4f8365
 
 
-# Docker Composeを使用して実行中のコンテナ内のアプリケーションに対して、対話型のBashシェルセッションを開始するためのコマンド
+# Docker Composeを使用して実行中のコンテナ内のアプリケーションに対して、対話型のBashシェルセッションを開始するためのコマンド  (※appはサービスの名前)
 docker-compose exec app /bin/bash
