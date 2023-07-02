@@ -10,6 +10,10 @@ composer install
 #ライブラリを取り除く
 composer remove <ライブラリ名>
 
+#Scssのコンポーザーをインストール
+docker-compose exec app composer require scssphp/scssphp
+
+
 
 ###composer.jsonをつくる
 1,GithubでPHP envと検索する
