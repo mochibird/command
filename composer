@@ -10,9 +10,11 @@ composer install
 #ライブラリを取り除く
 composer remove <ライブラリ名>
 
-#Scssのコンポーザーをインストール
-docker-compose exec app composer require scssphp/scssphp
+#Bootstrapのコンポーザーをインストール
+docker-compose exec app composer require twbs/bootstrap:5.0.2
 
+#Scssphpのコンポーザーをインストール
+docker-compose exec app composer require scssphp/scssphp
 
 
 ###composer.jsonをつくる
