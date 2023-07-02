@@ -8,7 +8,7 @@
 ⑤npm run sass⬅️cssファイル生成　sass開始
 
 
----bootstrapのscssコマンド
+---scssphp×bootstrapのscssコマンド
 ＃使用するscssファイル
 @import '/var/www/html/vendor/twbs/bootstrap/scss/bootstrap';
 
