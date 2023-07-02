@@ -24,7 +24,7 @@ docker-compose exec app composer require scssphp/scssphp
 
 4,phpdotenvをチェックし docker-compose exec app composer require vlucas/phpdotenv のコマンドを実行  ⬅️composer.jsonをアップデートし、ライブラリがインストールされる　PHP .envの中で使用するライブラリ
 
-5,phpdotenvをチェックし、(動画内では)srcの直下に.envファイルを作り、.envファイル内で環境変数を指定する ※db-variables.envと同じにしないといけない
+5,phpdotenvをチェックし、(動画内では)srcの直下に.envファイルを作り、.envファイル内で環境変数を指定する ※db-variables.envと同じにしないといけない(イメージやコンテナを作る前に指定しないと変更できないのかも？)
 例、
 DB_HOST="db"
 DB_USERNAME="book_log"
