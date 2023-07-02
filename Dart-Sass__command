@@ -15,4 +15,4 @@
 ＃scssファイルの起動
 ①docker-compose exec app /bin/bash でコンテナ内に入る
 ②vendor/scssphp/scssphp/bin/pscss < companies/stylesheets/scss/app.scss ←scssファイルの位置
-③vendor/scssphp/scssphp/bin/pscss < companies/stylesheets/scss/app.scss > companies/stylesheets/css/app.css　←cssファイル作成
+③vendor/scssphp/scssphp/bin/pscss < companies/stylesheets/scss/app.scss > companies/stylesheets/css/app.css　←cssファイルをコンパイル
