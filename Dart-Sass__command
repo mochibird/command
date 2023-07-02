@@ -1,4 +1,4 @@
------dart sassコマンド(Node.jsインストール後)
+-----sassコマンド(Node.jsインストール後)
 ①npm init -y    ⬅️package.json生成
 ②npm install sass　⬅️dart sass生成
 ③package.json内
@@ -6,3 +6,7 @@
    "sass": "sass --watch sass:css"
 ④同じ階層にsass/style.scssを作成
 ⑤npm run sass⬅️cssファイル生成　sass開始
+
+
+---bootstrapのscssコマンド
+@import '/var/www/html/vendor/twbs/bootstrap/scss/bootstrap';
