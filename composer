@@ -51,6 +51,6 @@ require __DIR__ . '/../vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/..');
 $dotenv->load();
 
-8,docker-compose exec app php (環境変数を使いたいファイルの指定)
+8,docker-compose exec app php (環境変数を使いたいファイルの指定) ←めっちゃ大事
 
 9, (例)$dbHost = $_ENV['DB_HOST']; で使っていける
