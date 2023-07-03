@@ -8,10 +8,9 @@
 ⑤npm run sass⬅️cssファイル生成　sass開始
 
 
----scssphp×bootstrapのscssコマンド
-＃使用するscssファイル
-@import '/var/www/html/vendor/twbs/bootstrap/scss/bootstrap';
-
+---scssphpコマンド
+#Scssphpのコンポーザーをインストール
+docker-compose exec app composer require scssphp/scssphp
 ＃scssファイルの起動
 ①docker-compose exec app /bin/bash でコンテナ内に入る
 ②vendor/scssphp/scssphp/bin/pscss < companies/stylesheets/scss/app.scss ←scssファイルの位置
