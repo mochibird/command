@@ -6,6 +6,7 @@ composer require <ライブラリ名>
 
 #composer.jsonもしくはcomposer.lockに従ってライブラリをインストールする - チーム開発時に使用。共通のバージョンのライブラリを使うことができる
 composer install  ←composer.jsonに記載後に使用する
+composer update   ←composer installをすでに行っているのならこっち
 
 #ライブラリを取り除く
 composer remove <ライブラリ名>
