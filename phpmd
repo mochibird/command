@@ -1,0 +1,1 @@
+./vendor/bin/phpmd . text phpmd.xml --suffixes php --exclude vendor
