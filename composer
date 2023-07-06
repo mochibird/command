@@ -56,3 +56,18 @@ $dotenv->load();
 8,docker-compose exec app php (環境変数を使いたいファイルの指定) ←めっちゃ大事
 
 9, (例)$dbHost = $_ENV['DB_HOST']; で使っていける
+
+
+
+composer.json設定例
+{
+    "name": "root/html",
+    "require": {},
+    "require-dev": {
+        "squizlabs/php_codesniffer": "3.*"
+    },
+    "script":{
+        "phpcs": "./vendor/bin/phpcs --standard=phpcs.xml"
+    }
+}
+scriptによりコマンドが楽になる composer phpcs
