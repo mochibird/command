@@ -81,4 +81,4 @@ vendorの下は検査しない設定であるexcludeを覚えておこう
 --exclude: 無視するディレクトリのパターンをカンマ区切りの文字列で指定します。パターンにはアスタリスクを使用します。例えば、src/foo/.phpや*src/foo/*などです。
 
 #キーワード
-Config Reference ruleset composer Getting Started Ruleset Usage Command Downloads
+Config Reference ruleset composer Getting Started Ruleset Usage Command Downloads Configuration
