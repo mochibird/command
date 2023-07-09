@@ -75,7 +75,7 @@ composer.json設定例
 }
 scriptによりコマンドが楽になる composer phpcs
 
-※/phpmd . textの . で繋げることは今後も大事かもしれないので覚えておきたい
+※/phpmd . textの . は今の作業ディレクトリを示している
 vendorの下は検査しない設定であるexcludeを覚えておこう
 --suffixes: 有効なソースコードのファイル拡張子をカンマ区切りの文字列で指定します。例えば、php,phtmlなどです。
 --exclude: 無視するディレクトリのパターンをカンマ区切りの文字列で指定します。パターンにはアスタリスクを使用します。例えば、src/foo/.phpや*src/foo/*などです。
