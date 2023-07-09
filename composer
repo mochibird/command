@@ -82,3 +82,5 @@ vendorの下は検査しない設定であるexcludeを覚えておこう
 
 #キーワード
 Config Reference ruleset composer Getting Started Ruleset Usage Command Downloads Configuration
+phpunitのテストコマンド
+./vendor/bin/phpunit tests --bootstrap vendor/autoload.php
