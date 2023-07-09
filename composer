@@ -78,4 +78,5 @@ scriptによりコマンドが楽になる composer phpcs
 --suffixes: 有効なソースコードのファイル拡張子をカンマ区切りの文字列で指定します。例えば、php,phtmlなどです。
 --exclude: 無視するディレクトリのパターンをカンマ区切りの文字列で指定します。パターンにはアスタリスクを使用します。例えば、src/foo/.phpや*src/foo/*などです。
 
-Config Reference ruleset composer 
+#キーワード
+Config Reference ruleset composer Getting Started Ruleset Usage Command Downloads
